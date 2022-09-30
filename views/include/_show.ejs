@@ -1,15 +1,18 @@
-<tr>
-    <td>1</td>
-    <td>username</td>
-    <td>exaple@gmial.com</td>
-    <td>male</td>
-    <td>active</td>
+<% for(var i =0;i<users.length;i++){ %>
+  <tr>
+    <td><%= i+1%></td>
+    <td><%= users[i].name%></td>
+    <td><%= users[i].email%></td>
+    <td><%= users[i].gender%></td>
+    <td><%= users[i].status%></td>
     <td>
-    <a href="/update-user" class="btn border-shadow update">
+      <a href="/update-user" class="btn border-shadow update">
         <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
-    </a>
-    <a href="#" class="btn border-shadow delete">
+      </a>
+      <a href="#" class="btn border-shadow delete">
         <span class="text-gradient"><i class="fas fa-times"></i></span>
-    </a>
+      </a>
     </td>
-</tr>
+  </tr>
+  <% } %></users.length;i++){
+>

@@ -15,12 +15,14 @@ exports.create = (req, res) => {
     gender: req.body.gender,
     status: req.body.status,
   });
+
+
   // save user
   user
     .save(user)
     .then((data) => {
       //   res.send(data);
-      res.redirect("/add_user");
+      res.redirect("/add-user");
     })
     .catch((err) => {
       res.status(500).send({
